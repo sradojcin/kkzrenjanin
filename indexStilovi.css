@@ -1,0 +1,175 @@
+.glow {
+  font-size: 3em; /* Podesite veličinu fonta po želji */
+  color: #ffffff; /* Bela boja teksta */
+  text-align: center; /* Centrirajte tekst */
+  animation: glow 2s infinite alternate;
+}
+
+/* Definicija glow animacije */
+@keyframes glow {
+  0% {
+    text-shadow: 0 0 10px #00bfff, 0 0 20px #00bfff, 0 0 30px #00bfff,
+      0 0 40px #1e90ff, 0 0 50px #1e90ff, 0 0 60px #1e90ff, 0 0 70px #1e90ff;
+  }
+  100% {
+    text-shadow: 0 0 20px #00bfff, 0 0 30px #00bfff, 0 0 40px #00bfff,
+      0 0 50px #1e90ff, 0 0 60px #1e90ff, 0 0 70px #1e90ff, 0 0 80px #1e90ff;
+  }
+}
+.sekcija-dobrodoslice {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.slideshow-container {
+  width: 100%;
+  overflow: hidden;
+  margin: auto;
+}
+
+.slideshow {
+  display: flex;
+  width: 100%;
+  animation: slide 20s linear infinite;
+}
+
+.slideshow img {
+  width: 20%;
+  flex-shrink: 0;
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.sekcija-slike-tekst {
+  padding: 20px 0;
+}
+
+.slika-tekst-par {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.slika-kontejner {
+  position: relative;
+  width: 45%;
+  margin: 10px 0;
+}
+
+.slika-kontejner img {
+  width: 100%;
+  height: auto;
+}
+
+.zatamnjena-pozadina {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.slika-kontejner:hover .zatamnjena-pozadina {
+  opacity: 1;
+}
+
+.tekst {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+}
+
+.naslovVesti {
+  text-align: center;
+}
+.sekcija-vesti {
+  padding: 20px 0;
+}
+
+.vesti-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.vest {
+  position: relative;
+  width: 45%;
+  margin: 10px 0;
+}
+
+.vest img {
+  width: 100%;
+  height: auto;
+}
+
+.prekrivka {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.vest:hover .prekrivka {
+  opacity: 1;
+}
+
+.vest-info {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+}
+
+.separator-tela {
+  border: 0;
+  border-top: 1px solid #eee;
+  margin: 20px auto;
+  width: 50%;
+}
+@media (max-width: 768px) {
+  .slideshow img {
+    width: 35%; /* Ensure images take full width on smaller screens */
+    min-width: auto;
+    height: auto;
+  }
+
+  .slika-kontejner {
+    width: 100%; /* Full width for image containers on smaller screens */
+  }
+
+  .slika-tekst-par {
+    flex-direction: column; /* Stack image-text pairs vertically on smaller screens */
+  }
+
+  .vest {
+    width: 100%; /* Full width for news items on smaller screens */
+  }
+
+  .naslov {
+    text-align: center;
+  }
+
+  .separator-tela {
+    width: 80%; /* Adjust separator width on smaller screens */
+  }
+}

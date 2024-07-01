@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="osnovniStilovi.css" />
+    <link rel="stylesheet" href="treninziStilovi.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="levaSekcija">
+          <a href="index.html">
+            <img src="logo.png" alt="Opis loga" class="logo" />
+          </a>
+          <h1>Karate Klub Zrenjanin</h1>
+          <div class="padajuciMeni">
+            <button class="meniDugme">
+              <img src="meni.png" alt="Meni" />
+            </button>
+            <div class="padajuciMeni-elementi">
+              <a href="index.html">Početna</a>
+              <a href="oNama.html">O nama</a>
+              <a href="treninzi.html">Treninzi</a>
+              <a href="kontakt.html">Kontakt</a>
+              <div class="padajuciMeni-funkcije">
+                <button id="tamnaTemaBtn">Tamna tema</button>
+                <button id="svetlaTemaBtn">Svetla tema</button>
+                <button id="povecajFontBtn">Povećaj font</button>
+                <button id="smanjiFontBtn">Smanji font</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="desnaSekcija">
+          <button id="tamnaTemaBtn">Tamna tema</button>
+          <button id="svetlaTemaBtn">Svetla tema</button>
+          <button id="povecajFontBtn">Povećaj font</button>
+          <button id="smanjiFontBtn">Smanji font</button>
+        </div>
+      </nav>
+      <hr class="separator" />
+    </header>
+
+    <div class="container">
+      <!-- Sekcija Trenera -->
+      <div class="sekcija-trenera">
+        <div class="trener">
+          <img src="trener1.png" alt="Trener 1" />
+          <h3>Vladimir Ilic</h3>
+          <p>
+            Bivsi selektor nacionalnog tima, bivsi klupski sampion evrope i
+            nacionalni sampion, dugogodisnje iskustvo u trenerskom poslu
+          </p>
+        </div>
+      </div>
+
+      <section class="trening-sekcija">
+        <div class="lokacije">
+          <div class="lokacija">
+            <div class="slika-tekst">
+              <img src="lokacija1.jpg" alt="Lokacija 1" />
+              <h3>Dom borilačkih sportova Partizan</h3>
+            </div>
+          </div>
+          <div class="lokacija">
+            <div class="slika-tekst">
+              <img src="lokacija3.jpg" alt="Lokacija 2" />
+              <h3>Srednja Medicinska škola Zrenjanin</h3>
+            </div>
+          </div>
+        </div>
+        <div class="termini">
+          <h1>Termini Treninga</h1>
+          <table class="termini-tabela">
+            <thead>
+              <tr>
+                <th>Dan</th>
+                <th>Lokacija 1</th>
+                <th>Lokacija 2</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Ponedeljak</td>
+                <td>18:00 - 20:00</td>
+                <td>17:30 - 19:30</td>
+              </tr>
+              <tr>
+                <td>Utorak</td>
+                <td>17:00 - 19:00</td>
+                <td>16:30 - 18:30</td>
+              </tr>
+              <!-- Ostali dani -->
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </div>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-info">
+          <h3>Kontakt</h3>
+          <p>Adresa: Ulica, Grad, Država</p>
+          <p>Telefon: 123-456-789</p>
+          <p>Email: info@example.com</p>
+          <p>Radno vreme: Pon - Pet: 9:00 - 17:00</p>
+        </div>
+        <div class="footer-nav">
+          <h3>Navigacija</h3>
+          <ul>
+            <li><a href="index.html">Početna</a></li>
+            <li><a href="oNama.html">O nama</a></li>
+            <li><a href="treninzi.html">Treninzi</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+          </ul>
+        </div>
+        <div class="footer-social">
+          <h3>Pratite nas</h3>
+          <ul>
+            <li>
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Sva prava zadržana. Karate Klub Zrenjanin</p>
+      </div>
+    </footer>
+    <script src="skripte.js"></script>
+  </body>
+</html>

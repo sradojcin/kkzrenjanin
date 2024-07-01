@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="osnovniStilovi.css" />
+    <link rel="stylesheet" href="oNamaStilovi.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="levaSekcija">
+          <a href="index.html">
+            <img src="logo.png" alt="Opis loga" class="logo" />
+          </a>
+          <h1>Karate Klub Zrenjanin</h1>
+          <div class="padajuciMeni">
+            <button class="meniDugme">
+              <img src="meni.png" alt="Meni" />
+            </button>
+            <div class="padajuciMeni-elementi">
+              <a href="index.html">Početna</a>
+              <a href="oNama.html">O nama</a>
+              <a href="treninzi.html">Treninzi</a>
+              <a href="kontakt.html">Kontakt</a>
+              <div class="padajuciMeni-funkcije">
+                <button id="tamnaTemaBtn">Tamna tema</button>
+                <button id="svetlaTemaBtn">Svetla tema</button>
+                <button id="povecajFontBtn">Povećaj font</button>
+                <button id="smanjiFontBtn">Smanji font</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="desnaSekcija">
+          <button id="tamnaTemaBtn">Tamna tema</button>
+          <button id="svetlaTemaBtn">Svetla tema</button>
+          <button id="povecajFontBtn">Povećaj font</button>
+          <button id="smanjiFontBtn">Smanji font</button>
+        </div>
+      </nav>
+      <hr class="separator" />
+    </header>
+
+    <div class="container">
+      <div class="o-nama-sekcija">
+        <div class="o-nama-tekst">
+          <h2>O nama</h2>
+          <p>
+            Karate Klub Zrenjanin je osnovan pre više od tri decenije sa ciljem
+            da promoviše karate kao sport i način života. Naš klub je poznat po
+            svojoj dugoj tradiciji, kvalitetnom treningu i brojnim uspesima na
+            domaćoj i međunarodnoj sceni. Kroz godine, iznjedrili smo mnoge
+            šampione, kako na evropskim, tako i na svetskim takmičenjima.
+          </p>
+          <p>
+            Naši članovi, od najmlađih do najiskusnijih, treniraju pod vođstvom
+            iskusnih trenera koji su posvećeni prenošenju znanja i vrednosti
+            karatea. Verujemo da karate nije samo sport, već i način života koji
+            podstiče disciplinu, poštovanje i upornost. Ponosni smo na naše
+            članove koji su postali šampioni Srbije, Evrope i sveta, ali i na
+            one koji svakodnevno pokazuju predanost i ljubav prema ovom
+            plemenitom sportu.
+          </p>
+          <p>
+            U Karate Klubu Zrenjanin, svakodnevno radimo na unapređenju tehnika
+            i veština, ali i na razvoju karaktera naših članova. Naši treninzi
+            su prilagođeni svim uzrastima i nivoima znanja, pa tako u klubu
+            treniraju i oni koji se tek upoznaju sa karateom, kao i iskusni
+            takmičari.
+          </p>
+          <p>
+            Pored sportskih uspeha, trudimo se da učestvujemo u raznim
+            društvenim aktivnostima i da budemo uzor u zajednici. Naš klub je
+            mesto gde se neguje prijateljstvo, zajedništvo i sportski duh.
+            Pridružite nam se i postanite deo naše velike karate porodice!
+          </p>
+        </div>
+        <div class="o-nama-slika">
+          <img src="lokacija1.jpg" alt="Karate tim Zrenjanin" />
+        </div>
+      </div>
+      <div class="clanovi">
+        <h1>Naši članovi</h1>
+        <div class="clanovi-lista">
+          <div class="clan" onclick="showPopup(1)">
+            <img src="takmicar1.png" alt="Takmičar 1" />
+          </div>
+          <div class="clan" onclick="showPopup(2)">
+            <img src="takmicar2.png" alt="Takmičar 2" />
+          </div>
+          <div class="clan" onclick="showPopup(3)">
+            <img src="takmicar3.png" alt="Takmičar 3" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="popup-overlay" class="popup-overlay" onclick="closePopup()"></div>
+    <div id="popup" class="popup">
+      <span class="popup-close" onclick="closePopup()">&times;</span>
+      <div id="popup-content"></div>
+    </div>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-info">
+          <h3>Kontakt</h3>
+          <p>Adresa: Ulica, Grad, Država</p>
+          <p>Telefon: 123-456-789</p>
+          <p>Email: info@example.com</p>
+          <p>Radno vreme: Pon - Pet: 9:00 - 17:00</p>
+        </div>
+        <div class="footer-nav">
+          <h3>Navigacija</h3>
+          <ul>
+            <li><a href="index.html">Početna</a></li>
+            <li><a href="oNama.html">O nama</a></li>
+            <li><a href="treninzi.html">Treninzi</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+          </ul>
+        </div>
+        <div class="footer-social">
+          <h3>Pratite nas</h3>
+          <ul>
+            <li>
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Sva prava zadržana. Karate Klub Zrenjanin</p>
+      </div>
+    </footer>
+    <script src="skripte.js"></script>
+  </body>
+</html>

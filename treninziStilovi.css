@@ -1,0 +1,122 @@
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Sekcija Trenera */
+.sekcija-trenera {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-bottom: 40px;
+}
+
+.trener {
+  flex: 1 1 30%;
+  text-align: center;
+  margin: 10px;
+}
+
+.trener img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.trener:hover img {
+  transform: scale(1.05);
+}
+
+.trener h3 {
+  margin: 10px 0;
+}
+
+/* Sekcija Lokacija i Termina Treninga */
+.trening-sekcija {
+  margin-bottom: 40px;
+}
+
+.lokacije {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.lokacija {
+  flex: 1 1 45%;
+  margin: 10px;
+}
+
+.slika-tekst {
+  text-align: center;
+}
+
+.slika-tekst img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.slika-tekst:hover img {
+  transform: scale(1.05);
+}
+
+.slika-tekst h3 {
+  margin: 10px 0;
+}
+
+.termini {
+  text-align: center;
+}
+
+.termini h1 {
+  margin-bottom: 20px;
+}
+
+.termini-tabela {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+
+.termini-tabela th,
+.termini-tabela td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+.termini-tabela th {
+  background-color: #007bff;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .sekcija-trenera,
+  .lokacije {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .trener,
+  .lokacija {
+    flex: 1 1 100%;
+    margin: 10px 0;
+  }
+
+  .termini-tabela th,
+  .termini-tabela td {
+    font-size: 14px;
+    padding: 5px;
+  }
+}

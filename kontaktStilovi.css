@@ -1,0 +1,32 @@
+.kontakt-sekcija {
+  padding: 50px 0;
+}
+
+.kontakt-forma {
+  background: #f9f9f9;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.kontakt-forma h2 {
+  margin-bottom: 20px;
+}
+
+.kontakt-forma .form-control {
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.kontakt-forma .btn {
+  background: #007bff;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.kontakt-info {
+  text-align: left;
+}
+
+.kontakt-info h3 {
+  margin-bottom: 15px;
+}

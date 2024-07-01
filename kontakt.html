@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="osnovniStilovi.css" />
+    <link rel="stylesheet" href="kontaktStilovi.css" />
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="levaSekcija">
+          <a href="index.html">
+            <img src="logo.png" alt="Opis loga" class="logo" />
+          </a>
+          <h1>Karate Klub Zrenjanin</h1>
+          <div class="padajuciMeni">
+            <button class="meniDugme">
+              <img src="meni.png" alt="Meni" />
+            </button>
+            <div class="padajuciMeni-elementi">
+              <a href="index.html">Početna</a>
+              <a href="oNama.html">O nama</a>
+              <a href="treninzi.html">Treninzi</a>
+              <a href="kontakt.html">Kontakt</a>
+              <div class="padajuciMeni-funkcije">
+                <button id="tamnaTemaBtn">Tamna tema</button>
+                <button id="svetlaTemaBtn">Svetla tema</button>
+                <button id="povecajFontBtn">Povećaj font</button>
+                <button id="smanjiFontBtn">Smanji font</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="desnaSekcija">
+          <button id="tamnaTemaBtn">Tamna tema</button>
+          <button id="svetlaTemaBtn">Svetla tema</button>
+          <button id="povecajFontBtn">Povećaj font</button>
+          <button id="smanjiFontBtn">Smanji font</button>
+        </div>
+      </nav>
+      <hr class="separator" />
+    </header>
+
+    <div class="container">
+      <section class="kontakt-sekcija">
+        
+          
+          <div class="col-md-6">
+            <div class="kontakt-forma">
+              <h2>Kontaktirajte Nas</h2>
+              <form>
+                <div class="form-group">
+                  <label for="ime">Ime</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="ime"
+                    placeholder="Vaše ime"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    placeholder="Vaš email"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="predmet">Predmet</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="predmet"
+                    placeholder="Predmet poruke"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="poruka">Poruka</label>
+                  <textarea
+                    class="form-control"
+                    id="poruka"
+                    rows="4"
+                    placeholder="Vaša poruka"
+                  ></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Pošalji</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-info">
+          <h3>Kontakt</h3>
+          <p>Adresa: Ulica, Grad, Država</p>
+          <p>Telefon: 123-456-789</p>
+          <p>Email: info@example.com</p>
+          <p>Radno vreme: Pon - Pet: 9:00 - 17:00</p>
+        </div>
+        <div class="footer-nav">
+          <h3>Navigacija</h3>
+          <ul>
+            <li><a href="index.html">Početna</a></li>
+            <li><a href="oNama.html">O nama</a></li>
+            <li><a href="treninzi.html">Treninzi</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+          </ul>
+        </div>
+        <div class="footer-social">
+          <h3>Pratite nas</h3>
+          <ul>
+            <li>
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Sva prava zadržana. Karate Klub Zrenjanin</p>
+      </div>
+    </footer>
+    <script src="skripte.js"></script>
+  </body>
+</html>
